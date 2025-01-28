@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Predictor</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3b3b3b); /* Black gradient background */
+            color: #ffffff; /* White text for contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        form {
+            background-color: #292929; /* Dark gray form background */
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            padding: 30px 40px;
+            max-width: 450px;
+            width: 100%;
+            border: 2px solid #ff0000; /* Red border */
+        }
+
+        /* Form Title */
+        h1 {
+            text-align: center;
+            color: #00bfff; /* Bright blue for the title */
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+
+        /* Form Groups */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ff4500; /* Vibrant red for labels */
+        }
+
+        /* Input and Select Fields */
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444; /* Subtle gray border */
+            border-radius: 8px;
+            box-sizing: border-box;
+            background-color: #1e1e1e; /* Darker background for inputs */
+            color: #ffffff; /* White text */
+        }
+
+        /* Focus Styles */
+        input[type="text"]:focus, select:focus {
+            border-color: #00bfff; /* Blue focus effect */
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 191, 255, 0.8);
+        }
+
+        /* Submit Button */
+        input[type="submit"] {
+            background-color: #00bfff; /* Bright blue button */
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Hover and Active Effects for Button */
+        input[type="submit"]:hover {
+            background-color: #ff4500; /* Red hover effect */
+            transform: translateY(-3px);
+        }
+
+        input[type="submit"]:active {
+            background-color: #292929; /* Reset to dark gray on active */
+            color: #00bfff; /* Blue text on active */
+            transform: translateY(0);
+        }
+
+        /* Dropdown Arrow Styling */
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='%23ffffff' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form action="{{url_for('predict_datapoint')}}" method="POST">
+        <h1>Diamond Price Predictor</h1>
+
+        <div class="form-group">
+            <label for="carat">Carat:</label>
+            <input type="text" id="carat" name="carat" placeholder="Enter carat value (e.g., 0.5)">
+        </div>
+
+        <div class="form-group">
+            <label for="depth">Depth:</label>
+            <input type="text" id="depth" name="depth" placeholder="Enter depth value (e.g., 62)">
+        </div>
+
+        <div class="form-group">  
+            <label for="table">Table:</label>
+            <input type="text" id="table" name="table" placeholder="Enter table value (e.g., 58)">
+        </div>
+        
+        <div class="form-group">
+            <label for="x">x (length in mm):</label>
+            <input type="text" id="x" name="x" placeholder="Enter x value (e.g., 4.5)">
+        </div>
+      
+        <div class="form-group">
+            <label for="y">y (width in mm):</label>
+            <input type="text" id="y" name="y" placeholder="Enter y value (e.g., 4.7)">
+        </div>
+      
+        <div class="form-group">
+            <label for="z">z (depth in mm):</label>
+            <input type="text" id="z" name="z" placeholder="Enter z value (e.g., 2.9)">
+        </div>         
+      
+        <div class="form-group">
+            <label for="cut">Cut:</label>
+            <select id="cut" name="cut">
+                <option value="Fair">Fair</option>
+                <option value="Good">Good</option>
+                <option value="Very Good">Very Good</option>
+                <option value="Premium">Premium</option>
+                <option value="Ideal">Ideal</option>
+            </select>
+        </div>
+      
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="clarity">Clarity:</label>
+            <select id="clarity" name="clarity">
+                <option value="I1">I1</option>
+                <option value="SI2">SI2</option>
+                <option value="SI1">SI1</option>
+                <option value="VS2">VS2</option>
+                <option value="VS1">VS1</option>
+                <option value="VVS2">VVS2</option>
+                <option value="VVS1">VVS1</option>
+                <option value="IF">IF</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Predict Price">
+        <div>{{final_result}}</div>
+    </form>
+</body>
+</html>
