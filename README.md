@@ -1,6 +1,7 @@
 
 # Diamond Price Prediction
 
+
 This repository contains a project that predicts the price of diamonds using machine learning techniques. The project follows a complete data science workflow, including data preprocessing, exploratory data analysis (EDA), model building, and performance evaluation.
 
 ## Table of Contents
