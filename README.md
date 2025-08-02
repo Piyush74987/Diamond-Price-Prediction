@@ -44,11 +44,12 @@ pip install -r requirements.txt</code></pre>
     <h2>📈 Results</h2>
     <p>The model provides an accurate prediction of the diamond price based on user inputs. Evaluation metrics like RMSE and R<sup>2</sup> score can be found in the notebook.</p>
     <h2>🖼️ Screenshot</h2>
-    <p> <img width="1920" height="1080" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/59751ae1-0dab-478e-a18f-b06fdf0ee3db" />
+    <p> 
+<img width="1920" height="955" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/a0a41ca3-37b2-4e60-9fb2-fa6204b7c692" />
 
-<img width="1920" height="1080" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/015e8fec-11d3-488a-8406-144518eec48d" />
+<img width="1920" height="955" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/02cf1586-18e1-4d6a-b082-5788d6fe2007" />
 
-   <img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/09bfbd48-a548-4d60-9c2c-5ed868220e58" />
+<img width="1920" height="948" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/f51bd6c0-1a44-415a-b517-14f49daa7d8e" />
     </p>
     <h2>🤝 Contributing</h2>
     <p>Feel free to fork the repo and create pull requests for improvements!</p
