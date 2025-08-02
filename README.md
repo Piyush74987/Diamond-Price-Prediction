@@ -1,40 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>GemWorth: Diamond Price Prediction System</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #f9f9f9;
-            padding: 20px;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #007acc;
-        }
-        code {
-            background-color: #e8e8e8;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-size: 90%;
-        }
-        pre {
-            background: #f4f4f4;
-            padding: 10px;
-            overflow-x: auto;
-        }
-        ul {
-            margin-left: 20px;
-        }
-    </style>
-</head>
-<body
-    <h1>💎 GemWorth: Diamond Price Prediction System</h1>
-    <p>This project predicts the price of diamonds using machine learning techniques. It follows a complete data science pipeline: data preprocessing, EDA, model training, and deployment using Flask.</p>
-    <h2>📁 Project Structure</h2>
-    <pre>
+<h1>💎 GemWorth: Diamond Price Prediction System</h1>
+<p>This project predicts the price of diamonds using machine learning techniques. It follows a complete data science pipeline: data preprocessing, EDA, model training, and deployment using Flask.</p>
+<h2>📁 Project Structure</h2>
+<pre>
 Diamond-Price-Prediction/
 ├── data/                   # Contains dataset files
 ├── notebooks/              # Jupyter notebooks for EDA and modeling
