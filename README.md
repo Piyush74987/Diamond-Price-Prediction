@@ -13,6 +13,7 @@ This repository contains a project that predicts the price of diamonds using mac
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
+- [Screenshot](#screenshot)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -85,9 +86,16 @@ The dataset is available on [Kaggle](https://www.kaggle.com/shivam2503/diamonds)
 
 The model achieves a high level of accuracy, demonstrating reliable predictions for diamond prices. The detailed performance metrics and analysis are available in the project notebooks.
 
-## Contributing
+## screenshoot
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+<img width="1920" height="1080" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/59751ae1-0dab-478e-a18f-b06fdf0ee3db" />
+
+<img width="1920" height="1080" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/015e8fec-11d3-488a-8406-144518eec48d" />
+
+<img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/09bfbd48-a548-4d60-9c2c-5ed868220e58" />
+.
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request
 
 1. Fork the repository.
 2. Create a new branch:
@@ -110,7 +118,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-![Screenshot (3)](https://github.com/user-attachments/assets/004bd781-2f08-4e7a-9485-346dc44e1c14)
-
-![Screenshot (1)](https://github.com/user-attachments/assets/4c2ce3d8-727e-4c46-b6c9-1179f831c59b)
 
